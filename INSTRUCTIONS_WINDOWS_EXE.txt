@@ -1,0 +1,8 @@
+WISE IPTV TV - COMPILATION WINDOWS (.EXE) VIA GITHUB ACTIONS
+============================================================
+
+1. Déposez tous les fichiers de cette archive sur votre dépôt GitHub
+2. Allez dans l'onglet "Actions" de votre dépôt GitHub
+3. Le workflow "Build Windows Wise IPTV TV EXE" compile automatiquement les .exe
+4. Téléchargez l'artifact "WiseIPTV-TV-Windows-Executables.zip"
+5. Vous obtenez l'installateur NSIS et la version portable Windows !

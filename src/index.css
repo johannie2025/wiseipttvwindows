@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: linear-gradient(180deg, #0C1E42 0%, #060D1F 50%, #040814 100%);
+  background-attachment: fixed;
+  color: #FFFFFF;
+  overflow: hidden;
+  user-select: none;
+  min-height: 100vh;
+}
+
+/* TV Leanback Focus Styles */
+.tv-focusable {
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.tv-focusable:focus-visible,
+.tv-focusable.is-focused {
+  outline: 3px solid #FFFFFF !important;
+  box-shadow: 0 0 25px rgba(77, 163, 255, 0.6), 0 0 8px rgba(255, 255, 255, 0.8) !important;
+  transform: scale(1.03) !important;
+  z-index: 20 !important;
+}
+
+/* Custom Leanback Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(6, 13, 31, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: #22396B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4DA3FF;
+}
+
+/* Range input */
+input[type="range"] {
+  accent-color: #1F7AE0;
+}
